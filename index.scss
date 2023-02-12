@@ -5,10 +5,13 @@ $mk-gray-two: #eeeeee;
 
 body {
   margin: 0;
+  position: relative;
 }
+
 ul {
   padding-inline-start: 0;
 }
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -23,9 +26,11 @@ ul {
     display: none;
   }
 }
+
 .about-links {
   display: none;
 }
+
 @keyframes example {
   from {
     height: 0;
@@ -36,13 +41,13 @@ ul {
     width: 100%;
   }
 }
+
 .responsive-nav {
-    background: rgba($color: #222222, $alpha: 0.75);
+  background: rgba($color: #222222, $alpha: 0.75);
   width: 100%;
   position: absolute;
   left: 0;
   top: 70px;
-//   height: 200px;
   z-index: 1;
   animation-name: example;
   animation-duration: 0.5s;
@@ -51,6 +56,7 @@ ul {
     list-style: none;
     margin-bottom: 1rem;
   }
+
   a {
     text-decoration: none;
     color: #fff;
@@ -89,7 +95,7 @@ header {
   align-items: center;
   text-decoration: none;
   color: #fff;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .w-50 {
@@ -112,9 +118,11 @@ header {
 .capitalize {
   text-transform: capitalize;
 }
+
 .hero-section {
   position: relative;
 }
+
 .section-description {
   color: $mk-color;
   font-size: 0.813rem;
@@ -126,15 +134,18 @@ header {
   font-size: 1.8rem;
   font-weight: bold;
 }
+
 .header-three {
   color: $mk-black;
   font-size: 1.4rem;
   font-weight: bold;
 }
+
 .header-one {
   font-size: 2rem;
   color: #fff;
 }
+
 .body-text {
   font-size: 0.94rem;
   color: $mk-gray;
@@ -153,7 +164,7 @@ header {
   -moz-border-radius: 1.88rem;
   -ms-border-radius: 1.88rem;
   -o-border-radius: 1.88rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   &:hover {
     background-color: #fff;
     color: $mk-color;
@@ -177,7 +188,7 @@ header {
 .gallery-section {
   max-width: 82rem;
   margin: auto;
-  padding: 2rem 1rem;
+  padding: 4rem 1rem;
   .gallery {
     display: flex;
     justify-content: space-around;
@@ -194,8 +205,8 @@ header {
   font-family: "Questrial", sans-serif;
 }
 
-.Roboto{
-    font-family: 'Roboto', sans-serif;
+.Roboto {
+  font-family: "Roboto", sans-serif;
 }
 
 .footer {
@@ -207,6 +218,7 @@ header {
     max-width: 82rem;
     margin: auto;
   }
+
   li {
     list-style: none;
     color: #fff;
@@ -219,12 +231,15 @@ header {
       font-size: 0.813rem;
     }
   }
+
   ul {
     padding-inline-start: 0;
   }
+
   .flex-row {
     gap: 0 1rem;
   }
+
   .links-container {
     display: flex;
     justify-content: space-between;
@@ -232,12 +247,14 @@ header {
     margin: auto;
     flex-wrap: wrap;
   }
+
   .about-wrap,
   .info-wrap,
   .follow-wrap,
   .service-wrap {
     width: 50%;
   }
+
   .footer-copyright {
     text-align: center;
     color: #fff;
@@ -247,6 +264,7 @@ header {
     margin: 4rem 0;
   }
 }
+
 .border-white {
   border-top: 1px solid white;
   opacity: 0.2;
@@ -281,7 +299,6 @@ header {
   width: 100%;
   height: 52.25rem;
   position: relative;
-  margin: 20px auto;
   overflow: hidden;
 }
 
@@ -295,6 +312,7 @@ header {
   overflow: hidden;
   flex-wrap: wrap;
 }
+
 .slides .slide {
   width: 100%;
   height: 52.25rem;
@@ -310,7 +328,7 @@ header {
 }
 
 #testimonial-carousel {
-  width: 60%;
+  width: 100%;
   height: 100%;
   position: relative;
   margin: auto;
@@ -330,6 +348,7 @@ header {
   flex-wrap: wrap;
   margin: auto;
 }
+
 .testimonial-slides .testimonial-slide {
   width: 100%;
   height: 37.5rem;
@@ -338,15 +357,16 @@ header {
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   .testimonial-content {
-    width: 60%;
+    width: 85%;
     margin: auto;
     text-align: center;
     p {
-      font-size: 1.13rem;
+      font-size: 1.12rem;
       color: $mk-gray;
     }
   }
 }
+
 .testimonial-section {
   position: relative;
   height: 22rem;
@@ -372,6 +392,9 @@ header {
   background-color: transparent;
   color: #fff;
   cursor: pointer;
+  img {
+    width: 1rem;
+  }
 }
 
 #prev {
@@ -403,17 +426,19 @@ header {
     cursor: pointer;
   }
 }
+
 .active {
   background-color: #d4b254 !important;
 }
+
 .indicators div {
   background-color: #fff;
 }
 
 .hero-section {
   position: relative;
-  top: -35px;
 }
+
 .hero-slide-content {
   position: absolute;
   top: 40%;
@@ -423,8 +448,8 @@ header {
     width: 100%;
     color: #fff;
     margin: auto;
-    p{
-        font-size: 0.813rem;
+    p {
+      font-size: 0.813rem;
     }
   }
   .order-btn-wrap {
@@ -455,6 +480,7 @@ header {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
 }
+
 // STYLE FOR LARGE SCREEN
 @media screen and (min-width: 1024px) {
   .craft-section {
@@ -475,6 +501,7 @@ header {
       width: 50%;
     }
   }
+  
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -514,9 +541,11 @@ header {
       }
     }
   }
+
   .menu-icon {
     display: none;
   }
+
   .footer {
     background-color: $mk-black;
     padding: 4rem 0;
@@ -524,6 +553,7 @@ header {
       max-width: 82rem;
       margin: auto;
     }
+
     li {
       list-style: none;
       color: #fff;
@@ -536,18 +566,22 @@ header {
         font-size: 0.813rem;
       }
     }
+
     ul {
       padding-inline-start: 0;
     }
+
     .flex-row {
       gap: 0 1rem;
     }
+
     .links-container {
       display: flex;
       justify-content: space-between;
       padding: 0 15rem;
       flex-wrap: nowrap;
     }
+
     .footer-copyright {
       text-align: center;
       color: #fff;
@@ -555,25 +589,30 @@ header {
       font-size: 0.813rem;
     }
   }
+
   .header-four {
     font-size: 1.5rem;
     color: #fff;
     font-weight: bold;
   }
+
   .header-two {
     color: $mk-black;
     font-size: 2.63rem;
     font-weight: bold;
   }
+
   .header-three {
     color: $mk-black;
     font-size: 2rem;
     font-weight: bold;
   }
+
   .header-one {
     font-size: 3.25rem;
     color: #fff;
   }
+
   .btn-gold {
     background-color: $mk-color;
     width: 100%;
@@ -586,7 +625,7 @@ header {
     -moz-border-radius: 1.88rem;
     -ms-border-radius: 1.88rem;
     -o-border-radius: 1.88rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
   }
 
   .hero-slide-content {
@@ -600,8 +639,75 @@ header {
       margin: auto;
     }
   }
+
+  #testimonial-carousel {
+    width: 60%;
+    height: 100%;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .testimonial-slides {
+    width: 100%;
+    height: 22.89rem;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+
+  .testimonial-slides .testimonial-slide {
+    width: 100%;
+    height: 37.5rem;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    .testimonial-content {
+      width: 60%;
+      margin: auto;
+      text-align: center;
+      p {
+        font-size: 1.13rem;
+        color: $mk-gray;
+      }
+    }
+  }
+
+  .testimonial-section {
+    position: relative;
+    height: 22rem;
+    padding: 6rem 0;
+    background-color: $mk-gray-two;
+    .section-description {
+      text-align: center;
+      margin-bottom: -5rem;
+    }
+  }
+
   .testimonial-btn-wrap {
     width: 26.19rem;
     margin: auto;
+  }
+
+  #prev,
+  #next {
+    position: absolute;
+    top: 65%;
+    transform: translateY(-50%);
+    font-size: 36px;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    img {
+      width: 100%;
+    }
   }
 }
