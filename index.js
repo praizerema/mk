@@ -9,6 +9,7 @@ function displaymenu() {
   }
 }
 
+// Script for hero section slide
 const carousel = document.querySelector("#carousel");
 const slides = carousel.querySelectorAll(".slides .slide");
 const indicators = carousel.querySelector(".indicators");
@@ -31,7 +32,6 @@ for (let i = 0; i < slides.length; i++) {
     indicators.children[i].classList.add("active");
   });
 }
-// indicator.
 slides[counter].style.display = "block";
 indicators.children[counter].classList.add("active");
 
@@ -46,6 +46,7 @@ setInterval(() => {
 }, 3500);
 
 
+// Script for testimonial section slide
 
 const testimonialCarousel = document.querySelector("#testimonial-carousel");
 const testimonialSlides = testimonialCarousel.querySelectorAll(".testimonial-slides .testimonial-slide");
